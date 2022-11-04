@@ -1,8 +1,8 @@
 import sys
-
 import pygame
-
 from settings import Settings
+from ship import Ship
+
 class RocketShip:
 
     def __init__(self):
@@ -13,6 +13,8 @@ class RocketShip:
             (self.settings.screen_width, self.settings.screen_height))
         pygame.display.set_caption("Rocket Ship")
 
+        self.ship = Ship(self)
+
     def run_game(self):
         while True:
             for event in pygame.event.get():
@@ -20,6 +22,7 @@ class RocketShip:
                     sys.exit()
 
             self.screen.fill(self.settings.bg_color)
+            self.ship.blitme()
 
             pygame.display.flip()
 
