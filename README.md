@@ -6,3 +6,6 @@ This program creates a game window with a white background and loads a spaceship
 The player can move the ship up, down, left, or right using the arrow keys.
 
 The purpose of this game is to utilize each arrow key as input, while also keeping the movement of the ship within the fixed game window.
+
+[Screenshot of Game](images/RG_screenshot.jpg)
+
